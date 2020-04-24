@@ -27,3 +27,5 @@ Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 
 Route::view('/home', 'home')->middleware('auth');
 Route::view('/admin', 'admin');
+
+Route::resource('food', 'WEB\FoodController');

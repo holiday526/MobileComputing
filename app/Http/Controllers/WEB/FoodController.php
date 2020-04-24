@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\WEB;
 
+use App\Food;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ class FoodController extends Controller
     public function index()
     {
         //
-        return 'hi';
+        return Food::all();
     }
 
     /**
@@ -31,6 +32,7 @@ class FoodController extends Controller
     public function create()
     {
         //
+        return view('food.admin.create');
     }
 
     /**

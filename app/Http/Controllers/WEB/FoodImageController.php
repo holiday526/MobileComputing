@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\WEB;
 
 use App\Food;
+use App\FoodImage;
 use App\Http\Controllers\Controller;
-use App\Origin;
 use Illuminate\Http\Request;
-use App\Category;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
-class FoodController extends Controller
+class FoodImageController extends Controller
 {
     public function __construct()
     {
@@ -24,7 +24,6 @@ class FoodController extends Controller
     public function index()
     {
         //
-        return Food::all();
     }
 
     /**
@@ -35,12 +34,8 @@ class FoodController extends Controller
     public function create()
     {
         //
-        $categories = Category::all();
-        $origins = Origin::all();
-        return view('food.admin.create', [
-            'categories'=>$categories,
-            'origins'=>$origins,
-        ]);
+        $food = Food::all();
+        return view('food_image.admin.create', ['foods'=>$food]);
     }
 
     /**
@@ -51,52 +46,44 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
         $rules = [
-            'category_id'=>'exists:App\Category,id|required',
-            'name' => 'string|min:2|required',
-            'price' => 'numeric|gte:0.1|required',
-            'weight' => 'numeric|gte:0|required',
+            'food_id'=>'exists:App\Food,id|required',
+            'food_image'=>'image|max:3999|required',
         ];
-        if (empty($request->origin_name) && empty($request->origin_id)) {
-            $rules['origin_id'] = 'exists:App\Origin,id|required';
-        }
-        if (isset($request->origin_name)) {
-            $rules['origin_name'] = 'string|min:2|unique:App\Origin,name|required';
-        } else if (isset($request->origin_id)) {
-            $rules['origin_id'] = 'exists:App\Origin,id|required';
-        }
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
-            return redirect('/food/create')->with('errors', $validator->errors()->getMessages());
+            return redirect('/food/image/create')->with('errors', $validator->errors()->getMessages());
+        }
+        if ($request->hasFile('food_image')) {
+            $filename_with_ext = $request->file('food_image')->getClientOriginalExtension();
+            $filename = pathinfo($filename_with_ext, PATHINFO_FILENAME);
+            $extension = $request->file('food_image')->getClientOriginalExtension();
+            $filename_to_store = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('food_image')->storeAs('/public/food_images', $filename_to_store);
+            $pathname = 'food_images/'.$filename_to_store;
         }
 
-        $food = new Food();
-        $food->category_id = $request->category_id;
-        $food->name = $request->name;
-        $food->price = $request->price;
-        $food->weight = $request->weight;
-        if (isset($request->origin_id)) {
-            $food->origin_id = $request->origin_id;
-        } else if (isset($request->origin_name)) {
-            $origin = new Origin();
-            $origin->name = $request->origin_name;
-            $origin->save();
-            $food->origin_id = $origin->id;
+        $food_image = new FoodImage();
+        $food_image['food_id'] = $request['food_id'];
+        $food_image['food_image_location'] = $pathname;
+        if (isset($request['index_photo'])) {
+            $food_image['index_photo'] = true;
         }
-        $food->save();
-        return redirect('/food/create')->with('success', 'food created');
+        $food_image->save();
+        return redirect('/food/image/create')->with('success', 'image added');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $food_id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($food_id)
     {
         //
+        $image = DB::table('food_images')->select()->where('food_id', $food_id)->where('index_photo', '=', 1)->first();
+        return view('food_image.admin.show', ['image'=>$image]);
     }
 
     /**

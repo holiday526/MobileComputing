@@ -28,4 +28,8 @@ Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 Route::view('/home', 'home')->middleware('auth');
 Route::view('/admin', 'admin');
 
+Route::resource('food/image', 'WEB\FoodImageController');
 Route::resource('food', 'WEB\FoodController');
+Route::resource('category', 'WEB\CategoriesController');
+
+

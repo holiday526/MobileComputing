@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d10163-57e0-4026-852d-0f7e24ee4a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/food/admin/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MobileComputing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MobileComputing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category/admin/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/food_image/admin/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/food_image/admin/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WEB/FoodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WEB/FoodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/food/admin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/admin/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MobileComputing" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,6 +162,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -202,7 +205,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587463518620</updated>
       <workItem from="1587463520637" duration="12557000" />
-      <workItem from="1587707685893" duration="7225000" />
+      <workItem from="1587707685893" duration="7347000" />
+      <workItem from="1587802472290" duration="208000" />
+      <workItem from="1587802947189" duration="11380000" />
     </task>
     <servers />
   </component>
@@ -210,6 +215,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587802898455">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1024.106.1024.768/0.0.1680.1050@0.0.1680.1050" timestamp="1587802898455" />
+    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587805906092">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1024.106.1024.768/0.0.1680.1050@0.0.1680.1050" timestamp="1587805906092" />
     <state width="2006" height="222" key="GridCell.Tab.0.bottom" timestamp="1587712198100">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
@@ -226,10 +239,16 @@
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state width="2006" height="222" key="GridCell.Tab.0.right/305.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1587712198099" />
-    <state x="690" y="1348" width="671" height="677" key="search.everywhere.popup" timestamp="1587726216123">
-      <screen x="305" y="1152" width="1440" height="900" />
+    <state x="848" y="506" key="NewPhpFileDialog" timestamp="1587828505796">
+      <screen x="0" y="0" width="2048" height="1152" />
     </state>
+    <state x="848" y="506" key="NewPhpFileDialog/2048.72.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1587828505796" />
+    <state x="547" y="251" width="955" height="867" key="search.everywhere.popup" timestamp="1587828315749">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state x="449" y="229" width="783" height="790" key="search.everywhere.popup/-1024.106.1024.768/0.0.1680.1050@0.0.1680.1050" timestamp="1587811102091" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587709961764" />
+    <state x="547" y="251" width="955" height="867" key="search.everywhere.popup/2048.72.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1587828315749" />
     <state x="548" y="251" width="953" height="866" key="search.everywhere.popup/305.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1587712229239" />
     <state x="690" y="1348" width="671" height="677" key="search.everywhere.popup/305.1152.1440.900/0.0.2048.1152@305.1152.1440.900" timestamp="1587726216123" />
   </component>

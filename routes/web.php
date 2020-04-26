@@ -29,7 +29,8 @@ Route::view('/home', 'home')->middleware('auth');
 Route::view('/admin', 'admin');
 
 Route::resource('food/image', 'WEB\FoodImageController')->except(['index', 'edit', 'update', 'destroy']);
-Route::resource('food', 'WEB\FoodController')->except(['index', 'show', 'edit', 'update', 'destroy']);
+Route::post('food/update/{food_id}', 'WEB\FoodsController@update');
+Route::resource('food', 'WEB\FoodsController')->except(['show', 'edit', 'update', 'destroy']);
 Route::resource('category/image', 'WEB\CategoryImageController')
     ->names(
         [
@@ -44,3 +45,5 @@ Route::resource('category/image', 'WEB\CategoryImageController')
     )
     ->except(['index', 'edit', 'update', 'destroy']);
 Route::resource('category', 'WEB\CategoriesController')->except(['index', 'show', 'edit', 'update', 'destroy']);
+
+Route::resource('recipe', 'WEB\RecipesController')->except(['index', 'edit', 'update', 'destroy']);

@@ -9,11 +9,17 @@ use Illuminate\Http\Request;
 use App\Category;
 use Illuminate\Support\Facades\Validator;
 
-class FoodController extends Controller
+class FoodsController extends Controller
 {
     public function __construct()
     {
         $this->middleware('admin');
+    }
+
+    public function index() {
+        $foods = Food::all();
+//        return $foods;
+        return view('food.admin.index', ['foods'=>$foods]);
     }
 
     /**
@@ -75,5 +81,28 @@ class FoodController extends Controller
         }
         $food->save();
         return redirect('/food/create')->with('success', 'food created');
+    }
+
+    public function update($food_id, Request $request) {
+//        dd($request->all());
+        $rules = [
+            'category_id' => 'exists:App\Category,id',
+            'name' => 'string:2|required',
+            'origin_id' => 'exists:App\Origin,id|required',
+            'promotion' => 'numeric|min:0|max:100|required',
+        ];
+        $validator = Validator::make($request->all(), $rules);
+        if($validator->fails()) {
+            return redirect('/food')->with('errors', $validator->errors()->getMessages());
+        }
+        $food = Food::find($food_id);
+        if (isset($request->category_id)) {
+            $food->category_id = $request->category_id;
+        }
+        $food->name = $request->name;
+        $food->origin_id = $request->origin_id;
+        $food->promotion = $request->promotion;
+        $food->save();
+        return redirect('/food')->with('success', "Food id: ".$food_id." Food name: ".$request->name." has been updated");
     }
 }

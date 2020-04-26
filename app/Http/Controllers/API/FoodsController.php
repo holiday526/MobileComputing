@@ -43,4 +43,9 @@ class FoodsController extends Controller
         }
         return abort(404);
     }
+
+    // TODO: return the items which are brough recently
+    public function getHotItem() {
+
+    }
 }

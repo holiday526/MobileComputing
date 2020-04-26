@@ -28,8 +28,19 @@ Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 Route::view('/home', 'home')->middleware('auth');
 Route::view('/admin', 'admin');
 
-Route::resource('food/image', 'WEB\FoodImageController');
-Route::resource('food', 'WEB\FoodController');
-Route::resource('category', 'WEB\CategoriesController');
-
-
+Route::resource('food/image', 'WEB\FoodImageController')->except(['index', 'edit', 'update', 'destroy']);
+Route::resource('food', 'WEB\FoodController')->except(['index', 'show', 'edit', 'update', 'destroy']);
+Route::resource('category/image', 'WEB\CategoryImageController')
+    ->names(
+        [
+            'index'=>'category.image.index',
+            'create'=>'category.image.create',
+            'store'=>'category.image.store',
+            'show'=>'category.image.show',
+            'edit'=>'category.image.edit',
+            'update'=>'category.image.update',
+            'destroy'=>'category.image.destroy',
+        ]
+    )
+    ->except(['index', 'edit', 'update', 'destroy']);
+Route::resource('category', 'WEB\CategoriesController')->except(['index', 'show', 'edit', 'update', 'destroy']);

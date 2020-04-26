@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers\API;
 
+use App\FoodImage;
+use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
 class FoodImageController extends Controller
 {
+    private function joinCategoriesAndFoodImages() {
+        return DB::table('foods')
+            ->leftJoin('categories',  'categories.id', '=', 'foods.category_id')
+            ->leftJoin('food_images', 'food_images.food_id', '=', 'foods.id');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,18 +24,33 @@ class FoodImageController extends Controller
      */
     public function index()
     {
-        //
+        // return the all information of all foods including food images
+        $food_images = $this->joinCategoriesAndFoodImages()
+            ->select('foods.*', 'food_images.*')
+            ->where('index_photo', 1)
+            ->get();
+        if (isset($food_images)) {
+            foreach($food_images as $food_image) {
+                $food_image->food_image_location = asset('storage/'.$food_image->food_image_location);
+            }
+            return response($food_images, 200, Config::get('constants.jsonContentType'));
+        }
+        return abort(404);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function foodCategoryIndex($category_id) {
+        $food_images = $this->joinCategoriesAndFoodImages()
+            ->select('foods.*', 'food_images.*')
+            ->where('index_photo', 1)
+            ->where('foods.category_id', $category_id)
+            ->get();
+        if (isset($food_images)) {
+            foreach($food_images as $food_image) {
+                $food_image->food_image_location = asset('storage/'.$food_image->food_image_location);
+            }
+            return response($food_images, 200, Config::get('constants.jsonContentType'));
+        }
+        return abort(404);
     }
 
     /**
@@ -38,30 +62,13 @@ class FoodImageController extends Controller
     public function show($food_id)
     {
         //
-        $image = DB::table('food_images')->select()->where('food_id', $food_id)->first();
-        return response(['food_image'=>asset('storage/'.$image->food_image_location)]);
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        $images = DB::table('food_images')->select()->where('food_id', $food_id)->get();
+        if (isset($images)) {
+            foreach ($images as $image) {
+                $image->food_image_location = asset('storage/'.$image->food_image_location);
+            }
+            return response($images, 200, Config::get('constants.jsonContentType'));
+        }
+        return abort(404);
     }
 }

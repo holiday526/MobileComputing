@@ -30,4 +30,12 @@ Route::group(['middleware' => 'auth:api'], function () {
 // admin login
 Route::post('/login/admin', 'API\AdminController@login');
 
-Route::get('/food/image/{food_id}', 'API\FoodImageController@show');
+// category image
+Route::apiResource('/category/image', 'API\CategoryImageController')->except(['store', 'destroy', 'update']);
+
+// food image
+Route::apiResource('/food/image', 'API\FoodImageController')->except(['store', 'destroy', 'update']);
+Route::get('/food/image/category/{category_id}', 'API\FoodImageController@foodCategoryIndex');
+
+// food
+Route::apiResource('/food', 'API\FoodsController')->except(['store', 'destroy', 'update']);

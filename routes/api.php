@@ -29,3 +29,5 @@ Route::group(['middleware' => 'auth:api'], function () {
 
 // admin login
 Route::post('/login/admin', 'API\AdminController@login');
+
+Route::get('/food/image/{food_id}', 'API\FoodImageController@show');

@@ -48,4 +48,14 @@ class FoodsController extends Controller
     public function getHotItem() {
 
     }
+
+    public function getPromotionItem() {
+        $foods = $this->joinCategory()->select(['foods.*', 'categories.name'])
+            ->having('foods.promotion', '>', 0)
+            ->get();
+        if (isset($food)) {
+            return response($food, 200, Config::get('constants.jsonContentType'));
+        }
+        return response(['food'=>'not found'], 404, Config::get('constants.jsonContentType'));
+    }
 }

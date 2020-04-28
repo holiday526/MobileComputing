@@ -14,7 +14,8 @@ class FoodImageController extends Controller
     private function joinCategoriesAndFoodImages() {
         return DB::table('foods')
             ->leftJoin('categories',  'categories.id', '=', 'foods.category_id')
-            ->leftJoin('food_images', 'food_images.food_id', '=', 'foods.id');
+            ->leftJoin('food_images', 'food_images.food_id', '=', 'foods.id')
+            ->leftJoin('origins', 'origins.id', '=', 'foods.origin_id');
     }
 
     /**
@@ -26,7 +27,7 @@ class FoodImageController extends Controller
     {
         // return the all information of all foods including food images
         $food_images = $this->joinCategoriesAndFoodImages()
-            ->select('foods.*', 'food_images.*')
+            ->select('foods.*', 'food_images.*', 'origins.name as origin_name')
             ->where('index_photo', 1)
             ->get();
         if (isset($food_images)) {
@@ -41,7 +42,7 @@ class FoodImageController extends Controller
     // return all the food index photo in a specific category
     public function foodCategoryIndex($category_id) {
         $food_images = $this->joinCategoriesAndFoodImages()
-            ->select('foods.*', 'food_images.*')
+            ->select('foods.*', 'food_images.*', 'origins.name as origin_name')
             ->where('index_photo', 1)
             ->where('foods.category_id', $category_id)
             ->get();

@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 {!! Form::label('weight', 'Weight', ['class' => 'control-label']) !!}
-                <input type="number" name="weight" required>
+                <input type="number" name="weight">
             </div>
             <div class="form-group">
                 {!! Form::label('promotion', 'Promotion discount: ', ['class' => 'control-label']) !!}

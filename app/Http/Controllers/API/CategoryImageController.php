@@ -27,7 +27,7 @@ class CategoryImageController extends Controller
         foreach ($category_images as $category_image) {
             $category_image->category_image_location = asset('storage/'.$category_image->category_image_location);
         }
-        return response(array($category_images), 200, Config::get('constants.jsonContentType'));
+        return response($category_images, 200, Config::get('constants.jsonContentType'));
     }
 
     /**
@@ -47,6 +47,6 @@ class CategoryImageController extends Controller
             $category_image->category_image_location = asset('storage/'.$category_image->category_image_location);
             return response(array($category_image), 200, Config::get('constants.jsonContentType'));
         }
-        return abort(404);
+        return response(['success'=>false,'error_message'=>"category_id: $category_id not found"]);
     }
 }

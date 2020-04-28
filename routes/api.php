@@ -41,6 +41,9 @@ Route::post('/admin/food/image', 'API\Admin\FoodImageController@store');
 Route::apiResource('/food/image', 'API\FoodImageController')->except(['store', 'destroy', 'update']);
 Route::get('/food/image/category/{category_id}', 'API\FoodImageController@foodCategoryIndex');
 
+// food origin
+Route::apiResource('origin', 'API\OriginsController')->except(['destroy', 'update', 'store']);
+
 // food
 Route::get('/food/promotion', 'API\FoodsController@getPromotionItem');
 Route::get('/food/hot_item', 'API\FoodsController@getHotItems');

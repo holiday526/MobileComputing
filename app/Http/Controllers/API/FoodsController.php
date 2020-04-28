@@ -13,7 +13,8 @@ class FoodsController extends Controller
 {
     private function joinCategory() {
         return DB::table('foods')
-            ->leftJoin('categories', 'foods.category_id', '=', 'categories.id');
+            ->leftJoin('categories', 'foods.category_id', '=', 'categories.id')
+            ->leftJoin('origins', 'origins.id', '=', 'foods.origin_id');
     }
 
     /**
@@ -65,13 +66,13 @@ class FoodsController extends Controller
         arsort($hot_items);
         $result_hot_items = [];
         foreach($hot_items as $k => $v) {
-            array_push($result_hot_items, $this->joinCategory()->select('foods.*', 'categories.name as category_name')->where('foods.id', $k)->first());
+            array_push($result_hot_items, $this->joinCategory()->select('foods.*', 'categories.name as category_name', 'origins.name as origin_name')->where('foods.id', $k)->first());
         }
         return response($result_hot_items, 200, Config::get('constants.jsonContentType'));
     }
 
     public function getPromotionItem(Request $request) {
-        $foods = $this->joinCategory()->select(['foods.*', 'categories.name'])
+        $foods = $this->joinCategory()->select(['foods.*', 'categories.name', 'origins.name as origin_name'])
             ->having('foods.promotion', '>', 0);
 
         if (isset($request->sortBy)) {

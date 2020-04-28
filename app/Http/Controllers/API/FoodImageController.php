@@ -38,6 +38,7 @@ class FoodImageController extends Controller
         return abort(404);
     }
 
+    // return all the food index photo in a specific category
     public function foodCategoryIndex($category_id) {
         $food_images = $this->joinCategoriesAndFoodImages()
             ->select('foods.*', 'food_images.*')

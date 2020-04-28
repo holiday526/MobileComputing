@@ -15,4 +15,6 @@ class Order extends Model
     protected $primaryKey = 'id';
 
     protected $table = 'orders';
+
+    protected $fillable = ['items', 'address', 'delivery_time'];
 }

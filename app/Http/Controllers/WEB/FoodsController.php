@@ -51,7 +51,8 @@ class FoodsController extends Controller
             'category_id'=>'exists:App\Category,id|required',
             'name' => 'string|min:2|required',
             'price' => 'numeric|gte:0.1|required',
-            'weight' => 'numeric|gte:0|required',
+            'weight' => 'numeric|gte:0.1|required',
+            'promotion' => 'numeric|gte:0.1|required',
         ];
         if (empty($request->origin_name) && empty($request->origin_id)) {
             $rules['origin_id'] = 'exists:App\Origin,id|required';
@@ -71,6 +72,7 @@ class FoodsController extends Controller
         $food->name = $request->name;
         $food->price = $request->price;
         $food->weight = $request->weight;
+        $food->promotion = $request->promotion;
         if (isset($request->origin_id)) {
             $food->origin_id = $request->origin_id;
         } else if (isset($request->origin_name)) {

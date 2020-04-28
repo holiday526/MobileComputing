@@ -33,9 +33,25 @@ Route::post('/login/admin', 'API\AdminController@login');
 // category image
 Route::apiResource('/category/image', 'API\CategoryImageController')->except(['store', 'destroy', 'update']);
 
-// food image
+// admin food image
+Route::delete('/admin/food/image/{food_image_id}', 'API\Admin\FoodImageController@destroy');
+Route::post('/admin/food/image', 'API\Admin\FoodImageController@store');
+
+// user food image
 Route::apiResource('/food/image', 'API\FoodImageController')->except(['store', 'destroy', 'update']);
 Route::get('/food/image/category/{category_id}', 'API\FoodImageController@foodCategoryIndex');
 
 // food
+Route::get('/food/promotion', 'API\FoodsController@getPromotionItem');
+Route::get('/food/hot_item', 'API\FoodsController@getHotItems');
 Route::apiResource('/food', 'API\FoodsController')->except(['store', 'destroy', 'update']);
+
+Route::apiResource('/recipe', 'API\RecipesController');
+
+Route::group(['middleware'=>'auth:api'], function() {
+    // admins' order
+    Route::apiResource('/admin/order', 'API\Admin\OrdersController');
+
+    // users' order
+    Route::apiResource('/order', 'API\OrdersController');
+});

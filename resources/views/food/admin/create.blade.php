@@ -26,6 +26,10 @@
                 {!! Form::label('weight', 'Weight', ['class' => 'control-label']) !!}
                 <input type="number" name="weight" required>
             </div>
+            <div class="form-group">
+                {!! Form::label('promotion', 'Promotion discount: ', ['class' => 'control-label']) !!}
+                <input type="number" name="promotion" required>
+            </div>
             <div>
                 {!! Form::label('origin', 'Origin', ['class' => 'control-label']) !!}
                 <input type="text" name="origin_name" placeholder="create new origin">

@@ -45,5 +45,3 @@ Route::resource('category/image', 'WEB\CategoryImageController')
     )
     ->except(['index', 'edit', 'update', 'destroy']);
 Route::resource('category', 'WEB\CategoriesController')->except(['index', 'show', 'edit', 'update', 'destroy']);
-
-Route::resource('recipe', 'WEB\RecipesController')->except(['index', 'edit', 'update', 'destroy']);

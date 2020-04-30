@@ -49,11 +49,16 @@ Route::get('/food/promotion', 'API\FoodsController@getPromotionItem');
 Route::get('/food/hot_item', 'API\FoodsController@getHotItems');
 Route::apiResource('/food', 'API\FoodsController')->except(['store', 'destroy', 'update']);
 
+// normal ppl get all images of specific recipe
+Route::get('/recipe/image/{recipe_id}', 'API\RecipeImageController@show');
+
 // admin recipe
 Route::apiResource('/recipe/image', 'API\Admin\RecipeImagesController')->except(['index', 'show', 'update']);
 
 // user recipe
 Route::apiResource('/recipe', 'API\RecipesController');
+
+
 
 Route::group(['middleware'=>'auth:api'], function() {
     // admins' order

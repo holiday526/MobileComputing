@@ -17,6 +17,11 @@ class RecipesController extends Controller
         $this->middleware(['auth:api', 'scopes:admin'])->except(['index', 'show']);
     }
 
+    private function joinRecipe() {
+        return DB::table('recipes')
+            ->leftJoin('recipe_images', 'recipes.id', '=', 'recipe_images.recipe_id');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +30,17 @@ class RecipesController extends Controller
     public function index()
     {
         //
-        return Recipe::all();
+        $recipe_images = $this->joinRecipe()
+            ->select('recipes.*', 'recipe_images.recipe_image_location')
+//            ->where('recipe_images.index_photo', 1)
+            ->get();
+        if (isset($recipe_images)) {
+            foreach($recipe_images as $recipe_image) {
+                $recipe_image->recipe_image_location = asset('storage/'.$recipe_image->recipe_image_location);
+            }
+            return response($recipe_images, 200, Config::get('constants.jsonContentType'));
+        }
+        return response(['success'=>false, 'error_message'=>'recipe not found'],404, Config::get('constants.jsonContentType'));
     }
 
     /**

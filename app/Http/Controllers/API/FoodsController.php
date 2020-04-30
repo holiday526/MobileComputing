@@ -25,7 +25,7 @@ class FoodsController extends Controller
     public function index()
     {
         // show all food
-        $foods = $this->joinCategory()->select(['foods.*', 'categories.name'])->get();
+        $foods = $this->joinCategory()->select(['foods.*', 'categories.name as category_name'])->get();
         return response($foods, 200, Config::get('constants.jsonContentType'));
     }
 

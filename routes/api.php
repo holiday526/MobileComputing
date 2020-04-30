@@ -49,6 +49,7 @@ Route::get('/food/promotion', 'API\FoodsController@getPromotionItem');
 Route::get('/food/hot_item', 'API\FoodsController@getHotItems');
 Route::apiResource('/food', 'API\FoodsController')->except(['store', 'destroy', 'update']);
 
+Route::apiResource('/recipe/image', 'API\Admin\RecipeImagesController')->except(['index', 'show', 'update']);
 Route::apiResource('/recipe', 'API\RecipesController');
 
 Route::group(['middleware'=>'auth:api'], function() {

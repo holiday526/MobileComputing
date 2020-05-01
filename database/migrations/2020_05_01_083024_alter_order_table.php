@@ -15,7 +15,7 @@ class AlterOrderTable extends Migration
     {
         //
         Schema::table('orders', function (Blueprint $table){
-            $table->timestamp('delivery_time', 0)->change();
+            $table->dateTime('delivery_time', 0)->change();
         });
     }
 

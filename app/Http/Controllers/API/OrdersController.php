@@ -47,7 +47,7 @@ class OrdersController extends Controller
         $rules = [
             'items' => 'array|required',
             'address' => 'string|required|min:5',
-            'delivery_time' => 'date_format:Y-m-d\TH:i:sP|required'
+            'delivery_time' => 'date_format:Y-m-d H:i:sP|required'
         ];
         $validator = Validator::make($request->all(), $rules);
         if (count($request->items) <= 0 ) {

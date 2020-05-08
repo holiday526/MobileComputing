@@ -50,7 +50,7 @@ class FoodImageController extends Controller
             foreach($food_images as $food_image) {
                 $food_image->food_image_location = asset('storage/'.$food_image->food_image_location);
             }
-            return response($food_images, 200, Config::get('constants.jsonContentType'));
+            return response($food_images, 200);
         }
         return abort(404);
     }

@@ -2,9 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d10163-57e0-4026-852d-0f7e24ee4a85" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MobileComputing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MobileComputing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/FoodImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/FoodImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_30_131721_create_recipe_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_30_131721_create_recipe_images_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <ignored path="$PROJECT_DIR$/vendor/asm89/stack-cors/" />
+    <ignored path="$PROJECT_DIR$/vendor/brick/math/" />
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/defuse/php-encryption/" />
+    <ignored path="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/dbal/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/event-manager/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/inflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/instantiator/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/vendor/dragonmantank/cron-expression/" />
+    <ignored path="$PROJECT_DIR$/vendor/egulias/email-validator/" />
+    <ignored path="$PROJECT_DIR$/vendor/facade/flare-client-php/" />
+    <ignored path="$PROJECT_DIR$/vendor/facade/ignition/" />
+    <ignored path="$PROJECT_DIR$/vendor/facade/ignition-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/fideloper/proxy/" />
+    <ignored path="$PROJECT_DIR$/vendor/filp/whoops/" />
+    <ignored path="$PROJECT_DIR$/vendor/firebase/php-jwt/" />
+    <ignored path="$PROJECT_DIR$/vendor/fruitcake/laravel-cors/" />
+    <ignored path="$PROJECT_DIR$/vendor/fzaninotto/faker/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/promises/" />
+    <ignored path="$PROJECT_DIR$/vendor/guzzlehttp/psr7/" />
+    <ignored path="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/" />
+    <ignored path="$PROJECT_DIR$/vendor/laminas/laminas-diactoros/" />
+    <ignored path="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/framework/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/passport/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/tinker/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/ui/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravelcollective/html/" />
+    <ignored path="$PROJECT_DIR$/vendor/lcobucci/jwt/" />
+    <ignored path="$PROJECT_DIR$/vendor/league/commonmark/" />
+    <ignored path="$PROJECT_DIR$/vendor/league/event/" />
+    <ignored path="$PROJECT_DIR$/vendor/league/flysystem/" />
+    <ignored path="$PROJECT_DIR$/vendor/league/oauth2-server/" />
+    <ignored path="$PROJECT_DIR$/vendor/mockery/mockery/" />
+    <ignored path="$PROJECT_DIR$/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/vendor/myclabs/deep-copy/" />
+    <ignored path="$PROJECT_DIR$/vendor/nesbot/carbon/" />
+    <ignored path="$PROJECT_DIR$/vendor/nikic/php-parser/" />
+    <ignored path="$PROJECT_DIR$/vendor/nunomaduro/collision/" />
+    <ignored path="$PROJECT_DIR$/vendor/nyholm/psr7/" />
+    <ignored path="$PROJECT_DIR$/vendor/opis/closure/" />
+    <ignored path="$PROJECT_DIR$/vendor/paragonie/random_compat/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/manifest/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/php-http/message-factory/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpoption/phpoption/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpseclib/phpseclib/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpspec/prophecy/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-text-template/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-timer/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-token-stream/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/phpunit/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/container/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/event-dispatcher/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-factory/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-message/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/simple-cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/psy/psysh/" />
+    <ignored path="$PROJECT_DIR$/vendor/ralouphie/getallheaders/" />
+    <ignored path="$PROJECT_DIR$/vendor/ramsey/collection/" />
+    <ignored path="$PROJECT_DIR$/vendor/ramsey/uuid/" />
+    <ignored path="$PROJECT_DIR$/vendor/scrivo/highlight.php/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/comparator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/diff/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/environment/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/exporter/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/global-state/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-enumerator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-reflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/recursion-context/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/resource-operations/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/type/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/console/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/css-selector/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/error-handler/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/event-dispatcher/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/finder/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/http-foundation/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/http-kernel/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/mime/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-ctype/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-iconv/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php72/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php73/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/process/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/routing/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/service-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/translation/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/translation-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/var-dumper/" />
+    <ignored path="$PROJECT_DIR$/vendor/theseer/tokenizer/" />
+    <ignored path="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles/" />
+    <ignored path="$PROJECT_DIR$/vendor/vlucas/phpdotenv/" />
+    <ignored path="$PROJECT_DIR$/vendor/voku/portable-ascii/" />
+    <ignored path="$PROJECT_DIR$/vendor/webmozart/assert/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +153,60 @@
   <component name="FavoritesManager">
     <favorites_list name="MobileComputing" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/Admin/CategoriesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/RecipesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/database/migrations/2020_04_30_131721_create_recipe_images_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/CategoryImageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/FoodImageController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/Admin/CategoriesController.php" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -150,9 +322,84 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-er-diagram-generator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/graphviz" />
     </include_path>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2804" />
+    <option name="y" value="-15" />
+    <option name="width" value="1063" />
+    <option name="height" value="1047" />
+  </component>
   <component name="ProjectId" id="1ayVBMl4PtCumzpOhGnTxdXq5eU" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileComputing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileComputing" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -167,7 +414,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -177,6 +424,18 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\taylo\Github Repository\MobileComputing" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -212,8 +471,41 @@
       <workItem from="1587802947189" duration="30799000" />
       <workItem from="1587965915943" duration="1558000" />
       <workItem from="1588250202162" duration="3884000" />
+      <workItem from="1588749991116" duration="178000" />
+      <workItem from="1588750186907" duration="12977000" />
+      <workItem from="1588867636901" duration="976000" />
+      <workItem from="1588948398694" duration="758000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15497000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49596122" visible="true" weight="0.18443497" />
+      <window_info id="Structure" order="1" sideWeight="0.50403875" side_tool="true" visible="true" weight="0.18443497" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -273,5 +565,855 @@
     <state x="548" y="251" width="953" height="866" key="search.everywhere.popup/305.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1588255703185" />
     <state x="690" y="1348" width="671" height="677" key="search.everywhere.popup/305.1152.1440.900/0.0.2048.1152@305.1152.1440.900" timestamp="1587726216123" />
     <state x="547" y="269" width="955" height="850" key="search.everywhere.popup/305.1175.1440.877/0.23.2048.1129@0.23.2048.1129" timestamp="1588252452474" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_24_082557_create_origins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_24_082632_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_24_082723_create_food_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_24_082830_create_orders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_25_102129_food_images_alter_column.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_26_052235_create_category_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_26_100205_alter_foods_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_26_144529_alter_food_table_for_promotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_28_110539_alter_foods_table_column_weight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_05_01_083024_alter_order_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_04_30_131721_create_recipe_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1321">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="752" column="59" lean-forward="true" selection-start-line="752" selection-start-column="59" selection-end-line="752" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Food.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WEB/CategoryImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Origin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Recipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/RecipeImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/CategoryImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/FoodImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/OriginsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/RecipeImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/Admin/FoodImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/Admin/OrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1218">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/Admin/RecipeImagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#97#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WEB/FoodImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="72" column="56" lean-forward="true" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WEB/FoodsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/C:/Users/taylo/Github Repository/MobileComputing/app/Http/Controllers/API">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/app/Http/Controllers/API</OriginalElement>
+          <nodes>
+            <node x="0.0" y="362.5">\App\Http\Controllers\API\AdminController</node>
+            <node x="1761.0" y="385.5">\App\Http\Controllers\API\OriginsController</node>
+            <node x="401.0" y="341.0">\App\Http\Controllers\API\OrdersController</node>
+            <node x="1020.0" y="363.5">\App\Http\Controllers\API\FoodImageController</node>
+            <node x="958.7678571428571" y="0.0">\Illuminate\Foundation\Auth\Access\AuthorizesRequests</node>
+            <node x="1358.767857142857" y="21.5">\Illuminate\Routing\Controller</node>
+            <node x="851.0" y="351.5">\App\Http\Controllers\API\UserController</node>
+            <node x="868.5" y="232.0">\App\Http\Controllers\Controller</node>
+            <node x="1530.0" y="352.5">\App\Http\Controllers\API\FoodsController</node>
+            <node x="621.0" y="396.5">\App\Http\Controllers\API\RecipeImageController</node>
+            <node x="468.76785714285705" y="33.0">\Illuminate\Foundation\Validation\ValidatesRequests</node>
+            <node x="178.0" y="330.0">\App\Http\Controllers\API\RecipesController</node>
+            <node x="296.7678571428571" y="55.0">\Illuminate\Foundation\Bus\DispatchesJobs</node>
+            <node x="1282.0" y="385.5">\App\Http\Controllers\API\CategoryImageController</node>
+            <node x="0.0" y="558.0">$PROJECT_DIR$/app/Http/Controllers/API/Admin</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\App\Http\Controllers\API\OriginsController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-36.0" />
+              <point x="1848.5" y="280.0" />
+              <point x="976.1666666666665" y="280.0" />
+              <point x="50.666666666666515" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\RecipeImageController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-25.0" />
+              <point x="726.0" y="310.0" />
+              <point x="912.8333333333334" y="310.0" />
+              <point x="-12.666666666666629" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Auth\Access\AuthorizesRequests">
+              <point x="14.25" y="-14.0" />
+              <point x="939.75" y="202.0" />
+              <point x="1148.767857142857" y="202.0" />
+              <point x="0.0" y="91.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\UserController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\AdminController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-59.0" />
+              <point x="79.0" y="280.0" />
+              <point x="874.8333333333334" y="280.0" />
+              <point x="-50.66666666666663" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\FoodImageController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-58.0" />
+              <point x="1141.0" y="310.0" />
+              <point x="938.1666666666667" y="310.0" />
+              <point x="12.666666666666742" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\CategoryImageController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-36.0" />
+              <point x="1396.0" y="300.0" />
+              <point x="950.8333333333333" y="300.0" />
+              <point x="25.333333333333258" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\RecipesController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-91.5" />
+              <point x="279.5" y="290.0" />
+              <point x="887.5" y="290.0" />
+              <point x="-38.0" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Bus\DispatchesJobs">
+              <point x="-42.75" y="-14.0" />
+              <point x="882.75" y="212.0" />
+              <point x="372.7678571428571" y="212.0" />
+              <point x="0.0" y="36.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\FoodsController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-69.0" />
+              <point x="1635.5" y="290.0" />
+              <point x="963.5" y="290.0" />
+              <point x="38.0" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Routing\Controller">
+              <point x="42.75" y="-14.0" />
+              <point x="968.25" y="212.0" />
+              <point x="1481.267857142857" y="212.0" />
+              <point x="0.0" y="69.5" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Validation\ValidatesRequests">
+              <point x="-14.25" y="-14.0" />
+              <point x="911.25" y="202.0" />
+              <point x="703.7678571428571" y="202.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\API\OrdersController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-80.5" />
+              <point x="501.0" y="300.0" />
+              <point x="900.1666666666666" y="300.0" />
+              <point x="-25.33333333333337" y="14.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7615973741794311" x="295.0" y="-54.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/C:/Users/taylo/Github Repository/MobileComputing/app/Http/Controllers/WEB">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/app/Http/Controllers/WEB</OriginalElement>
+          <nodes>
+            <node x="774.0" y="0.0">\Illuminate\Foundation\Auth\Access\AuthorizesRequests</node>
+            <node x="1021.0" y="343.5">\App\Http\Controllers\WEB\CategoryImageController</node>
+            <node x="506.99999999999994" y="21.5">\Illuminate\Routing\Controller</node>
+            <node x="740.25" y="232.0">\App\Http\Controllers\Controller</node>
+            <node x="580.0" y="310.0">\App\Http\Controllers\WEB\FoodsController</node>
+            <node x="795.0" y="321.0">\App\Http\Controllers\WEB\CategoriesController</node>
+            <node x="0.0" y="33.0">\Illuminate\Foundation\Validation\ValidatesRequests</node>
+            <node x="1182.0" y="55.0">\Illuminate\Foundation\Bus\DispatchesJobs</node>
+            <node x="362.99999999999994" y="321.0">\App\Http\Controllers\WEB\FoodImageController</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\App\Http\Controllers\WEB\FoodImageController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-58.5" />
+              <point x="461.49999999999994" y="280.0" />
+              <point x="755.0" y="280.0" />
+              <point x="-44.25" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Bus\DispatchesJobs">
+              <point x="44.25" y="-14.0" />
+              <point x="843.5" y="212.0" />
+              <point x="1258.5" y="212.0" />
+              <point x="0.0" y="36.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Routing\Controller">
+              <point x="-14.75" y="-14.0" />
+              <point x="784.5" y="202.0" />
+              <point x="630.5" y="202.0" />
+              <point x="0.0" y="69.5" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Auth\Access\AuthorizesRequests">
+              <point x="14.75" y="-14.0" />
+              <point x="814.0" y="202.0" />
+              <point x="968.0" y="202.0" />
+              <point x="0.0" y="91.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\WEB\FoodsController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-69.5" />
+              <point x="677.5" y="290.0" />
+              <point x="784.5" y="290.0" />
+              <point x="-14.75" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\Controller" target="\Illuminate\Foundation\Validation\ValidatesRequests">
+              <point x="-44.25" y="-14.0" />
+              <point x="755.0" y="212.0" />
+              <point x="243.5" y="212.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\WEB\CategoriesController" target="\App\Http\Controllers\Controller">
+              <point x="-5.6843418860808015E-14" y="-58.5" />
+              <point x="897.9999999999999" y="290.0" />
+              <point x="814.0" y="290.0" />
+              <point x="14.75" y="14.0" />
+            </edge>
+            <edge source="\App\Http\Controllers\WEB\CategoryImageController" target="\App\Http\Controllers\Controller">
+              <point x="0.0" y="-36.0" />
+              <point x="1137.0" y="280.0" />
+              <point x="843.5" y="280.0" />
+              <point x="44.25" y="14.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="14.0" y="-100.0" />
+          <SelectedNodes>
+            <node>\App\Http\Controllers\WEB\FoodImageController</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/C:/Users/taylo/Github Repository/MobileComputing/app/Http/Controllers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/app/Http/Controllers</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/app/Http/Controllers/Auth</node>
+            <node x="" y="">\Illuminate\Foundation\Auth\Access\AuthorizesRequests</node>
+            <node x="" y="">\App\Http\Controllers\HomeController</node>
+            <node x="" y="">\Illuminate\Routing\Controller</node>
+            <node x="" y="">\App\Http\Controllers\Controller</node>
+            <node x="" y="">$PROJECT_DIR$/app/Http/Controllers/API</node>
+            <node x="" y="">\Illuminate\Foundation\Validation\ValidatesRequests</node>
+            <node x="" y="">\Illuminate\Foundation\Bus\DispatchesJobs</node>
+            <node x="" y="">$PROJECT_DIR$/app/Http/Controllers/WEB</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9206128133704735" x="836.0" y="133.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/IsAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/C:/Users/taylo/Github Repository/MobileComputing/app">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/app</OriginalElement>
+          <nodes>
+            <node x="3623.684027777778" y="649.0">\Illuminate\Database\Eloquent\Concerns\HasEvents</node>
+            <node x="1281.1840277777778" y="3342.5">\Illuminate\Auth\Passwords\CanResetPassword</node>
+            <node x="543.6840277777778" y="869.0">\Illuminate\Database\Eloquent\Concerns\HidesAttributes</node>
+            <node x="1582.1840277777778" y="3287.0">\Illuminate\Auth\Authenticatable</node>
+            <node x="1608.6840277777778" y="946.5">\Illuminate\Contracts\Support\Arrayable</node>
+            <node x="2367.684027777778" y="451.0">\Illuminate\Database\Eloquent\Concerns\HasRelationships</node>
+            <node x="1453.9895833333335" y="4910.5">\App\CategoryImage</node>
+            <node x="970.7500000000001" y="4921.5">\Illuminate\Foundation\Auth\User</node>
+            <node x="4455.684027777778" y="0.0">$PROJECT_DIR$/app/Providers</node>
+            <node x="1942.9895833333335" y="4921.5">\App\Origin</node>
+            <node x="271.0" y="3331.5">\Illuminate\Foundation\Auth\Access\Authorizable</node>
+            <node x="0.0" y="3320.5">\Illuminate\Auth\MustVerifyEmail</node>
+            <node x="2308.9895833333335" y="5087.0">\App\User</node>
+            <node x="1731.6840277777778" y="913.5">\Illuminate\Contracts\Routing\UrlRoutable</node>
+            <node x="3181.684027777778" y="946.5">\JsonSerializable</node>
+            <node x="2629.7673611111113" y="3331.5">\Illuminate\Notifications\RoutesNotifications</node>
+            <node x="1749.9895833333335" y="4921.5">\App\Food</node>
+            <node x="225.68402777777783" y="935.5">\Illuminate\Support\Traits\ForwardsCalls</node>
+            <node x="3928.684027777778" y="946.5">\Illuminate\Contracts\Support\Jsonable</node>
+            <node x="4602.684027777778" y="0.0">$PROJECT_DIR$/app/Console</node>
+            <node x="1828.9895833333335" y="4921.5">\App\Category</node>
+            <node x="4079.6840277777783" y="913.5">\ArrayAccess</node>
+            <node x="4731.684027777778" y="0.0">$PROJECT_DIR$/app/Http</node>
+            <node x="2934.7673611111113" y="3331.5">\Illuminate\Notifications\HasDatabaseNotifications</node>
+            <node x="2856.2673611111113" y="4921.5">\Illuminate\Notifications\Notifiable</node>
+            <node x="794.0" y="3298.5">\Illuminate\Contracts\Auth\Authenticatable</node>
+            <node x="2576.9895833333335" y="4921.5">\App\FoodImage</node>
+            <node x="2178.9895833333335" y="4844.0">\Laravel\Passport\HasApiTokens</node>
+            <node x="754.6840277777778" y="0.0">\Illuminate\Database\Eloquent\Concerns\HasAttributes</node>
+            <node x="4299.684027777778" y="0.0">$PROJECT_DIR$/app/Exceptions</node>
+            <node x="1820.1840277777778" y="2043.0">\Illuminate\Database\Eloquent\Model</node>
+            <node x="1018.0000000000001" y="3353.5">\Illuminate\Contracts\Auth\Access\Authorizable</node>
+            <node x="1392.6840277777778" y="924.5">\Illuminate\Contracts\Queue\QueueableEntity</node>
+            <node x="1611.9895833333335" y="4888.5">\App\Recipe</node>
+            <node x="2438.9895833333335" y="4877.5">\App\Order</node>
+            <node x="2038.9895833333335" y="4921.5">\App\RecipeImage</node>
+            <node x="507.0" y="3342.5">\Illuminate\Contracts\Auth\CanResetPassword</node>
+            <node x="2200.9895833333335" y="5087.0">\App\Admin</node>
+            <node x="3365.684027777778" y="825.0">\Illuminate\Database\Eloquent\Concerns\HasTimestamps</node>
+            <node x="1169.6840277777778" y="792.0">\Illuminate\Database\Eloquent\Concerns\GuardsAttributes</node>
+            <node x="2070.684027777778" y="913.5">\Illuminate\Database\Eloquent\Concerns\HasGlobalScopes</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Auth\MustVerifyEmail">
+              <point x="-25.8125" y="-14.0" />
+              <point x="974.4375000000001" y="4824.0" />
+              <point x="125.5" y="4824.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\App\Origin" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-14.0" />
+              <point x="1980.9895833333335" y="4814.0" />
+              <point x="2101.295138888889" y="4814.0" />
+              <point x="51.11111111111131" y="1335.5" />
+            </edge>
+            <edge source="\App\Admin" target="\Laravel\Passport\HasApiTokens">
+              <point x="0.0" y="-47.0" />
+              <point x="2244.9895833333335" y="5067.0" />
+              <point x="2238.9895833333335" y="5067.0" />
+              <point x="-60.0" y="91.5" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Contracts\Auth\Access\Authorizable">
+              <point x="3.6875" y="-14.0" />
+              <point x="1003.9375000000001" y="4734.0" />
+              <point x="1104.5" y="4734.0" />
+              <point x="0.0" y="25.0" />
+            </edge>
+            <edge source="\Illuminate\Notifications\Notifiable" target="\Illuminate\Notifications\HasDatabaseNotifications">
+              <point x="28.0" y="-14.0" />
+              <point x="2940.2673611111113" y="4824.0" />
+              <point x="3052.2673611111113" y="4824.0" />
+              <point x="0.0" y="47.0" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Auth\Authenticatable">
+              <point x="18.4375" y="-14.0" />
+              <point x="1018.6875000000001" y="4754.0" />
+              <point x="1691.1840277777778" y="4754.0" />
+              <point x="0.0" y="91.5" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Auth\Passwords\CanResetPassword">
+              <point x="11.0625" y="-14.0" />
+              <point x="1011.3125000000001" y="4744.0" />
+              <point x="1421.6840277777778" y="4744.0" />
+              <point x="0.0" y="36.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HasRelationships">
+              <point x="49.28571428571422" y="-1335.5" />
+              <point x="2099.469742063492" y="1973.0" />
+              <point x="2764.684027777778" y="1973.0" />
+              <point x="0.0" y="520.5" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Contracts\Auth\Authenticatable">
+              <point x="-3.6875" y="-14.0" />
+              <point x="996.5625000000001" y="4794.0" />
+              <point x="896.0" y="4794.0" />
+              <point x="0.0" y="80.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HidesAttributes">
+              <point x="-180.71428571428555" y="-1335.5" />
+              <point x="1869.4697420634925" y="2013.0" />
+              <point x="639.1840277777778" y="2013.0" />
+              <point x="0.0" y="102.5" />
+            </edge>
+            <edge source="\App\RecipeImage" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-14.0" />
+              <point x="2098.9895833333335" y="4824.0" />
+              <point x="2152.40625" y="4824.0" />
+              <point x="102.22222222222217" y="1335.5" />
+            </edge>
+            <edge source="\App\User" target="\Laravel\Passport\HasApiTokens">
+              <point x="0.0" y="-47.0" />
+              <point x="2352.9895833333335" y="5047.0" />
+              <point x="2358.9895833333335" y="5047.0" />
+              <point x="60.0" y="91.5" />
+            </edge>
+            <edge source="\App\User" target="\Illuminate\Notifications\Notifiable">
+              <point x="29.333333333333258" y="-47.0" />
+              <point x="2382.3229166666665" y="5067.0" />
+              <point x="2940.2673611111113" y="5067.0" />
+              <point x="28.0" y="14.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\GuardsAttributes">
+              <point x="-115.0" y="-1335.5" />
+              <point x="1935.1840277777778" y="1993.0" />
+              <point x="1271.1840277777778" y="1993.0" />
+              <point x="0.0" y="179.5" />
+            </edge>
+            <edge source="\App\Category" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-14.0" />
+              <point x="1875.9895833333335" y="4804.0" />
+              <point x="2050.184027777778" y="4804.0" />
+              <point x="0.0" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HasEvents">
+              <point x="147.85714285714266" y="-1335.5" />
+              <point x="2198.0411706349205" y="2003.0" />
+              <point x="3766.184027777778" y="2003.0" />
+              <point x="0.0" y="322.5" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HasAttributes">
+              <point x="-147.85714285714266" y="-1335.5" />
+              <point x="1902.3268849206352" y="2003.0" />
+              <point x="952.1840277777778" y="2003.0" />
+              <point x="0.0" y="971.5" />
+            </edge>
+            <edge source="\App\CategoryImage" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-25.0" />
+              <point x="1522.9895833333335" y="4774.0" />
+              <point x="1896.8506944444443" y="4774.0" />
+              <point x="-153.33333333333348" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Foundation\Auth\Access\Authorizable">
+              <point x="-18.4375" y="-14.0" />
+              <point x="981.8125000000001" y="4814.0" />
+              <point x="379.0" y="4814.0" />
+              <point x="0.0" y="47.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">
+              <point x="16.42857142857156" y="-1335.5" />
+              <point x="2066.6125992063494" y="1963.0" />
+              <point x="2209.184027777778" y="1963.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\App\Food" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-14.0" />
+              <point x="1779.4895833333335" y="4794.0" />
+              <point x="1999.0729166666665" y="4794.0" />
+              <point x="-51.11111111111131" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Database\Eloquent\Concerns\HasTimestamps">
+              <point x="115.0" y="-1335.5" />
+              <point x="2165.184027777778" y="1993.0" />
+              <point x="3484.684027777778" y="1993.0" />
+              <point x="0.0" y="146.5" />
+            </edge>
+            <edge source="\App\User" target="\Illuminate\Foundation\Auth\User">
+              <point x="-29.333333333333258" y="-47.0" />
+              <point x="2323.65625" y="5047.0" />
+              <point x="1015.0000000000001" y="5047.0" />
+              <point x="14.75" y="14.0" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Database\Eloquent\Model">
+              <point x="25.8125" y="-14.0" />
+              <point x="1026.0625" y="4764.0" />
+              <point x="1845.7395833333335" y="4764.0" />
+              <point x="-204.44444444444434" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Notifications\Notifiable" target="\Illuminate\Notifications\RoutesNotifications">
+              <point x="-28.0" y="-14.0" />
+              <point x="2884.2673611111113" y="4824.0" />
+              <point x="2772.2673611111113" y="4824.0" />
+              <point x="0.0" y="47.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Contracts\Support\Arrayable">
+              <point x="-49.28571428571422" y="-1335.5" />
+              <point x="2000.8983134920636" y="1973.0" />
+              <point x="1660.1840277777778" y="1973.0" />
+              <point x="0.0" y="25.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Contracts\Routing\UrlRoutable">
+              <point x="-16.42857142857156" y="-1335.5" />
+              <point x="2033.7554563492063" y="1963.0" />
+              <point x="1891.1840277777778" y="1963.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Contracts\Queue\QueueableEntity">
+              <point x="-82.14285714285688" y="-1335.5" />
+              <point x="1968.041170634921" y="1983.0" />
+              <point x="1490.6840277777778" y="1983.0" />
+              <point x="0.0" y="47.0" />
+            </edge>
+            <edge source="\App\FoodImage" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-14.0" />
+              <point x="2628.4895833333335" y="4814.0" />
+              <point x="2254.628472222222" y="4814.0" />
+              <point x="204.44444444444434" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Foundation\Auth\User" target="\Illuminate\Contracts\Auth\CanResetPassword">
+              <point x="-11.0625" y="-14.0" />
+              <point x="989.1875000000001" y="4804.0" />
+              <point x="640.5" y="4804.0" />
+              <point x="0.0" y="36.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\ArrayAccess">
+              <point x="213.57142857142844" y="-1335.5" />
+              <point x="2263.7554563492063" y="2023.0" />
+              <point x="4167.184027777778" y="2023.0" />
+              <point x="0.0" y="58.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Contracts\Support\Jsonable">
+              <point x="180.71428571428578" y="-1335.5" />
+              <point x="2230.8983134920636" y="2013.0" />
+              <point x="3994.184027777778" y="2013.0" />
+              <point x="0.0" y="25.0" />
+            </edge>
+            <edge source="\App\Order" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-58.0" />
+              <point x="2497.9895833333335" y="4824.0" />
+              <point x="2203.517361111111" y="4824.0" />
+              <point x="153.33333333333303" y="1335.5" />
+            </edge>
+            <edge source="\App\Admin" target="\Illuminate\Foundation\Auth\User">
+              <point x="-29.333333333333258" y="-47.0" />
+              <point x="2215.65625" y="5067.0" />
+              <point x="985.5000000000001" y="5067.0" />
+              <point x="-14.75" y="14.0" />
+            </edge>
+            <edge source="\App\Recipe" target="\Illuminate\Database\Eloquent\Model">
+              <point x="0.0" y="-47.0" />
+              <point x="1670.9895833333335" y="4784.0" />
+              <point x="1947.9618055555557" y="4784.0" />
+              <point x="-102.22222222222217" y="1335.5" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\Illuminate\Support\Traits\ForwardsCalls">
+              <point x="-213.57142857142844" y="-1335.5" />
+              <point x="1836.6125992063494" y="2023.0" />
+              <point x="374.6840277777778" y="2023.0" />
+              <point x="0.0" y="36.0" />
+            </edge>
+            <edge source="\Illuminate\Database\Eloquent\Model" target="\JsonSerializable">
+              <point x="82.14285714285734" y="-1335.5" />
+              <point x="2132.326884920635" y="1983.0" />
+              <point x="3263.684027777778" y="1983.0" />
+              <point x="0.0" y="25.0" />
+            </edge>
+            <edge source="\App\Admin" target="\Illuminate\Notifications\Notifiable">
+              <point x="29.333333333333258" y="-47.0" />
+              <point x="2274.3229166666665" y="5057.0" />
+              <point x="2884.2673611111113" y="5057.0" />
+              <point x="-28.0" y="14.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6025137470542027" x="1890.0" y="4501.0" />
+          <SelectedNodes>
+            <node>\Illuminate\Database\Eloquent\Concerns\HasGlobalScopes</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/FoodsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WEB/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/RecipesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/Admin/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

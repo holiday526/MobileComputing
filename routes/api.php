@@ -33,6 +33,8 @@ Route::post('/login/admin', 'API\AdminController@login');
 // category image
 Route::apiResource('/category/image', 'API\CategoryImageController')->except(['store', 'destroy', 'update']);
 
+Route::delete('/category/{category_id}', 'API\Admin\CategoriesController@destroy');
+
 // admin food image
 Route::delete('/admin/food/image/{food_image_id}', 'API\Admin\FoodImageController@destroy');
 Route::post('/admin/food/image', 'API\Admin\FoodImageController@store');

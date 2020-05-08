@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 
+Route::group(['middleware' => 'scopes:admin'], function () {
+    Route::delete('/cate/{category_id}', 'API\Admin\CategoriesController@destroy')->name('category.delete');
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -31,7 +35,7 @@ Route::group(['middleware' => 'auth:api'], function () {
 Route::post('/login/admin', 'API\AdminController@login');
 
 // category image
-Route::delete('/category/{category_id}', 'API\Admin\CategoriesController@destroy');
+
 Route::apiResource('/category/image', 'API\CategoryImageController')->except(['store', 'destroy', 'update']);
 
 

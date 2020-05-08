@@ -9,10 +9,13 @@ use Illuminate\Support\Facades\DB;
 
 class CategoriesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth:api', 'scopes:admin']);
+    }
 
     public function destroy($category_id) {
-        return $category_id;
-//        DB::table('categories')->where('id', $category_id)->delete();
-//        return response(['success'=>true], 200, Config::get('constants.jsonContentType'));
+        DB::table('categories')->where('id', $category_id)->delete();
+        return response(['success'=>true], 200, Config::get('constants.jsonContentType'));
     }
 }

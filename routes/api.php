@@ -18,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
 
-Route::group(['middleware' => 'scopes:admin'], function () {
-    Route::delete('/cate/{category_id}', 'API\Admin\CategoriesController@destroy')->name('category.delete');
-});
+Route::delete('/category/{category_id}', 'API\Admin\CategoriesController@destroy')->name('category.delete');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
